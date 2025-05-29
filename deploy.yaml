@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nodeappdep
+  name: nodeappdep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodeappdep
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nodeappdep
+    spec:
+      containers:
+      - image: sb346/mydocnode:latest
+        name: mydocnode
+        resources: {}
+status: {}
