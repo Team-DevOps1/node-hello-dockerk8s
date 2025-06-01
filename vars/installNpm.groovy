@@ -1,4 +1,4 @@
 def call(){
 	echo "Installing Dependencies"
-	sh 'npm install'
+	echo 'npm install'
 }
